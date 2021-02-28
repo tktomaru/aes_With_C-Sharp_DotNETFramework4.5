@@ -324,6 +324,7 @@ __pycache__/
 
 # Telerik's JustMock configuration file
 *.jmconfig
+*.bak
 
 # BizTalk build output
 *.btp.cs
