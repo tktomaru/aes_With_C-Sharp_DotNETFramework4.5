@@ -70,6 +70,7 @@ aes.exeを実行するとaesで暗号化されたデータを復号すること�
 
 ## 暗号化する
 
+```
 rem ■暗号化する
 rem 0 enc dec flg 1 = encode
 rem 1 data
@@ -81,9 +82,11 @@ rem 6 argPaddingMode  None = 1 埋め込みなし PKCS7 = 2 Zeros = 3 ANSIX923 =
 rem 7 argKeySizes  128 がデフォルト
 rem 8 argBlockSize 128 がデフォルト
 aes 1 data.txt key.dat out-enc.dat iv.dat 1 3 128 128
+```
 
 ## 復号する
 
+```
 rem ■上記で暗号化したデータを復号する
 rem decode
 rem 0 enc dec flg 0 = decode
@@ -96,5 +99,6 @@ rem 6 argPaddingMode  None = 1 埋め込みなし PKCS7 = 2 Zeros = 3 ANSIX923 =
 rem 7 argKeySizes  128 がデフォルト
 rem 8 argBlockSize 128 がデフォルト
 aes 0 out-enc.dat key.dat out-dec.dat iv.dat 1 3
+```
 
 <br>
